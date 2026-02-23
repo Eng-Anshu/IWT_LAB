@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>assign_7</title>
+    <script>
+        //q1 find grade
+
+        var a,b,c,d,e,f,n;
+        var m=78;
+        if(m>=90)
+            console.log("grade a");
+        else if(m>=75)
+            console.log("grade b");
+        else if(m>=50)
+            console.log("grade c");
+        else
+            console.log("fail");
+
+        //q2 factorial of a no
+
+          n=5
+        var i,f=1;
+        for(i=2;i<=n;i++)
+        {
+              f= f*i;
+        }
+        console.log("the factorial of a number is "+f);
+
+        //q3 palindrome
+        i=121
+        n=i
+       var r,s=0
+        while(n>0)
+        {
+            r=n%10;
+            n=n/10;
+            s=s+r;
+        }
+        if(i==s)
+        console.log("it is aplindrome");
+    else
+    console.log("it is not a plindroomne");
+
+        //q4
+        a= new Array(1,2,3,4,5,6,7)
+        var sum=0;
+        var l=a[0],s=a[0];
+
+        for(var i=0;i<length.a;i++)
+        {
+                sum=sum+a[i];
+                if(a[i]>l)
+                    l=a[i];
+                if(a[i]<s)
+                    s=a[i];
+
+
+        }
+        console.log("sum="+sum+"\naverage="+(sum/a.length)+"\nlargest="+l+"\nsmallest="+s);
+        //q5
+        //second largest
+         a = new Array(12,56,7,3,98,15)
+        var lar = a[i];
+        var second_largest = a[i];
+        for(i = 0;i<a.length;i++){
+              if(a[i]>lar){
+                 second_largest = lar
+                 lar = a[i]
+              }
+        }
+        console.log("the second largest number is "+second_largest)
+
+        //q6 remove duplicate
+        a=new Array(1,2,3,2,4,5,5,6,7,8)
+        b=new Array
+        for(i=0;i<a.length;i++)
+        {
+            if(!b.includes(a[i]))
+        {
+            b.push(a[i])
+        }
+        }
+        console.log(b)
+
+        //q7 frequency
+         var a = new Array(1,1,1,1,15,3,6,8,54,23,2,26,6)
+        var t = 1,count=0;
+        for(var i = 0;i<a.length;i++){
+             if(t==a[i]) count++;
+        }
+        console.log("the number of occurences of the element "+t+" is "+count)
+
+        //q8
+        function isprime(n){
+            count = 0 
+             for(var i =2;i<n/2;i++){
+                  if(n%i==0) count++;
+                  if(count>0) break;
+             }
+             if(count==0) return true
+             else return false
+        }
+        for(var i = 2;i<20;i++){
+              console.log("is prime "+i+" -> "+isprime(i))
+        }
+
+        //q9
+        function Armstrong(n){
+           var  og = n , arm = 0 ;
+             while(n|=0){
+                var  r = n%10
+                     arm = arm+ Math.pow(r,3)
+                     n/=10
+             }
+             if(og==arm){
+                console.log(og+ " is armstrong number ")
+             }
+             else{
+                console.log(og + " is not an armstrong number")
+             }
+        }
+        Armstrong(123)
+        Armstrong(153)
+
+        //q10
+
+          var a = new Array(1,43,6,89,2,46,3,7,9)
+        var b = new Array()
+        var c = new Array()
+        for(var i = 0;i<a.length;i++){
+             if(a[i]%2==0) b.push(a[i])
+             else c.push(a[i])
+        }
+        console.log("even numbers "+b)
+        console.log("odd numbers "+c)
+
+        //q11
+         
+        var z = new Array(1,43,6,89,2,46,3,7,9)
+        
+        function reverse(a)
+        {
+            c=new Array()
+        for(i=a.length-1;i>=0;i--)
+        {
+            c.push(a[i])
+        }
+        return c;
+         }
+         console.log("reversed array is :"+reverse(z))
+
+         //q12 
+             function generateFibonacci(n){
+    var a = 0, b = 1;
+    console.log("The Fibonacci series is:");
+    while(a <= n){
+        console.log(a);
+        var next = a + b;
+        a = b;
+        b = next;
+    }
+}
+generateFibonacci(20);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
