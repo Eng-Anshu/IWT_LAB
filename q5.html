@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>q5</title>
+</head>
+<body>
+    <form action="">
+        <h2 align="center">Form</h2>
+        <p>Enter a number: </p>
+        <input type="number" id="numInput">
+    </form>
+
+    <p id="result"></p> <!-- place to show result -->
+
+    <script>
+        let input = document.querySelector('#numInput');
+        let result = document.querySelector('#result');
+
+        input.addEventListener('input', () => {
+            let num = parseInt(input.value);
+            let count = 0;
+
+            if (isNaN(num)) {
+                result.innerText = "Please enter a valid number.";
+                return;
+            }
+
+            for (let i = 1; i <= num; i++) {
+                if (num % i === 0) {
+                    count++;
+                }
+                if (count > 2) break;
+            }
+
+            if (count === 2) {
+                result.innerText = "The number is prime";
+            } else {
+                result.innerText = "The number is composite";
+            }
+        });
+    </script>
+</body>
+</html>
