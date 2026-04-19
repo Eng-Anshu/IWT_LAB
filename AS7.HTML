@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment</title>
+<style>
+.lines{
+display: flex;
+justify-content: center; gap: 20px;
+}
+.login-form{
+display: flex;
+flex-direction: column; justify-content: center; margin-top: 20px; height: 400px;
+width: 300px;
+text-align: center; border-radius: 10px;
+border: 4px solid whitesmoke; margin-left: 40%;
+}
+.checkbox{
+display: flex;
+align-items: center; gap: 5px;
+ 
+}
+.product-row{ display: flex;
+border: 3px solid blanchedalmond; border-radius: 10px;
+align-items: center; margin-top: 20px; height: 500px;
+}
+.product{
+display: flex;
+flex-direction: column; align-items: center; width: 25%;
+margin-top: -10px;
+
+
+}
+.addto{
+color: white;
+background-color: green; border-radius: 4px;
+padding: 8px; width: 87%;
+align-self: center;
+
+
+margin-bottom: auto;
+}
+.price{
+margin-top: 20px;
+ 
+}
+.profile{
+display: flex;
+flex-direction: column; align-items: center;
+border: 3px solid blanchedalmond; border-radius: 10px;
+width: 300px; margin-top: 20px; padding: 20px;
+}
+.profile-image{ border-radius: 50%; width: 150px; height: 150px;
+}
+</style>
+</head>
+<body>
+<div class="lines">
+<h1 >HTML</h1>
+<h1 >CSS</h1>
+<h1 >JavaScript</h1>
+</div>
+<span style="display: columns; margin-top: 20px;text-align: center;">
+<h1>JSP</h1>
+<h1>JDBC</h1>
+<h1>MySql</h1>
+</span>
+ 
+<div class="login-form">
+<h2 style="font-weight: bold; margin-bottom: auto;">Login</h2>
+<input type="text" placeholder="Username" style="border-radius: 4px; padding: 8px; width: 80%;align-self: center;">
+<input type="password" placeholder="Password" style="border-radius: 4px; padding: 8px; width: 80%;align-self: center;margin-top: 7px;margin-bottom: 40px;">
+<div id="checkbox">
+<input type="checkbox" id="remember-me" >
+<label for="remember-me" >Remember me</label>
+</div>
+<button type="submit" style="color: white; background-color: green;border-radius: 4px; padding: 8px; width: 87%;align-self: center;margin-top: 7px;margin-bottom: auto;">Login</button>
+</div>
+<h1 style="text-align: center; margin-top: 100px;">Featured Products</h1>
+<div class="product-row">
+
+
+<div class="product">
+<img src="biscuits.webp" alt="Product Image" style="border-radius: 10px; width: 200px; height: 200px; margin-top: 20px;">
+<h2>Biscuit</h2>
+<h4>A baked item made from flour, sugar etc</h4>
+<h3 class="price">$2.99</h3>
+<button class="addto">¯./   Add To Cart</button>
+</div>
+<div class="product">
+<img src="eggs.webp" alt="Product Image" style="border-radius: 10px; width: 200px; height: 200px;margin-top: 20px;">
+<h2>Eggs</h2>
+<h4>Freshly sourced eggs from farm</h4>
+<h3 class="price">$3.99</h3>
+ 
+<button class="addto"> /¯. Add To Cart</button>
+</div>
+<div class="product">
+<img src="sugar.webp" alt="Product Image" style="border-radius: 10px; width: 200px; height: 200px;margin-top: 20px;">
+<h2>Sugar</h2>
+<h4>A daily essential sweetener used in various recipes.</h4>
+<h3 class="price">$1.99</h3>
+<button class="addto">.¯ / Add To Cart</button>
+</div>
+<div class="product">
+<img src="flour.webp" alt="Product Image" style="border-radius: 10px; width: 200px; height: 200px;margin-top: 20px;">
+<h2>Flour</h2>
+<h4>A finely ground powder made from wheat.</h4>
+<h3 class="price">$4.99</h3>
+<button class="addto">.¯/   Add To Cart</button>
+</div>
+<div class="product">
+<img src="dal.webp" alt="Product Image" style="border-radius: 10px; width: 200px; height: 200px;margin-top: 20px;">
+<h2>Dal</h2>
+<h4>yellow cerel with high protein.</h4>
+<h3 class="price">$4.22</h3>
+<button class="addto">.¯/   Add To Cart</button>
+</div>
+</div>
+<h4>Personal Profile Website</h4>
+<div class="profile">
+<img src="p1.jfif" alt="Profile Picture" class="profile-image">
+<h2 class="profile-name">AWAKES</h2>
+<p class="profile-bio">this is a random person whose profile is given here</p>
+<p>□ʌV•   awakes@example.com</p>
+<p> !+91-9876543210</p>
+</body>
+</html>
