@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q2</title>
+</head>
+<body>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus maxime minus aperiam, eaque perferendis ad aspernatur ullam quisquam consequuntur hic.</p>
+    <button>hide </button>
+    <script>
+        let btn = document.querySelector('button')
+        let p = document.querySelector('p')
+        let count = 0 
+        btn.addEventListener("click",()=>{
+           count++
+           if(count%2==0){
+             p.style.display="none"
+             btn.innerText = "show"
+           }
+           else{
+            p.style.display = "block"
+            btn.innerText="hide"
+           }
+        })
+    </script>
+</body>
+</html>
